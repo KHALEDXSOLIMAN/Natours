@@ -1,0 +1,23 @@
+{
+  "name": "natours",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000N\u0000a\u0000t\u0000o\u0000u\u0000r\u0000s\u0000\r\u0000 \u0000",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KHALEDXSOLIMAN/Natours.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KHALEDXSOLIMAN/Natours/issues"
+  },
+  "homepage": "https://github.com/KHALEDXSOLIMAN/Natours#readme",
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  }
+}

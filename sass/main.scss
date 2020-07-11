@@ -1,3 +1,16 @@
+@import 'abstracts/function';
+@import 'abstracts/mixins';
+@import 'abstracts/variables';
+
+@import 'base/animations';
+@import 'base/base';
+@import 'base/typography';
+@import 'base/utilities';
+
+@import 'components/button';
+
+@import 'pages/home';
+
 /*
 COLORS:
 Light green: #7ed56f
@@ -8,31 +21,7 @@ new-dark : #28d1accc
 */
 
 //colors
-$color-primary-new-light: #5dfe60cc;
-$color-primary-new-dark: #28d1accc;
-$color-gray-dark: #777;
-$color-white: #fff;
-$color-black: #000;
 
-*,
-*::after,
-*::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit;
-}
-html {
-  font-size: 62.5%;
-}
-body {
-  font-family: 'lato', sans-serif;
-  font-weight: 400;
-  /*font-size: 16px;*/
-  line-height: 1.7;
-  color: $color-gray-dark;
-  padding: 3rem;
-  box-sizing: border-box;
-}
 .header {
   position: relative;
   height: 95vh;
@@ -85,89 +74,5 @@ body {
     font-weight: 700;
     letter-spacing: 1.75rem;
     animation: moveInRight 1s ease-in-out;
-  }
-}
-
-@keyframes moveInLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(-7rem);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-@keyframes moveInRight {
-  0% {
-    opacity: 0;
-    transform: translateX(7rem);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-@keyframes moveInBottom {
-  0% {
-    opacity: 0;
-    transform: translateY(3rem);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-.btn {
-  &:link,
-  &:visited {
-    text-transform: uppercase;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.6rem;
-    padding: 1.5rem 4rem;
-    display: inline-block;
-    border-radius: 10rem;
-    transition: transform 0.2s;
-    position: relative;
-  }
-  &:hover {
-    transform: translateY(-0.3rem);
-    box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
-    &::after {
-      transform: scaleX(1.4) scaleY(1.6);
-      opacity: 0;
-    }
-  }
-  &:active {
-    transform: translateY(-0.1rem);
-    box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
-  }
-
-  &--white {
-    background-color: $color-white;
-    color: $color-gray-dark;
-    &::after {
-      background-color: $color-white;
-    }
-  }
-
-  &::after {
-    content: '';
-    display: inline-block;
-    border-radius: 10rem;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    transition: all 0.4s ease-in-out;
-  }
-
-  &--animated {
-    animation: moveInBottom 0.5s ease-out;
-    animation-delay: 0.75s;
-    animation-fill-mode: backwards;
   }
 }

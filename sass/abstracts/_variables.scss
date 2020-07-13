@@ -8,6 +8,7 @@ new-dark : #28d1accc
 */
 
 //colors
+$color-primary: #55c57a;
 $color-primary-old-light: #7ed56f;
 $color-primary-old-dark: #28b485;
 
@@ -17,6 +18,9 @@ $color-gray-dark: #777;
 $color-gray-light-1: #f7f7f7;
 $color-white: #fff;
 $color-black: #000;
+
+//font
+$defult-font-size: 1.6rem;
 
 //grid
 $grid-width: 114rem;

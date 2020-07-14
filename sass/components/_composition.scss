@@ -10,17 +10,26 @@
     outline-offset: 2rem;
 
     &--p1 {
-      left: 0;
+      right: 0;
       top: 2rem;
     }
     &--p2 {
-      right: 0;
-      top: 6rem;
-    }
-    &--p3 {
-      right: 20%;
+      left: 0;
       top: 4rem;
     }
+    &--p3 {
+      left: 25%;
+      top: 12rem;
+    }
+    &--p4 {
+      right: 2rem;
+      top: 18rem;
+    }
+    &--p5 {
+      left: -2rem;
+      top: 20rem;
+    }
+
     &:hover {
       outline: 1.5rem solid $color-primary;
       transform: scale(1.05) translateY(-0.5rem);

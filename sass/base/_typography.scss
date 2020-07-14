@@ -57,6 +57,10 @@ body {
   font-weight: 700;
   text-transform: uppercase;
 }
+.list-teritiary {
+  display: inline-block;
+  list-style-type: none;
+}
 
 .paragraph {
   font-size: $defult-font-size;

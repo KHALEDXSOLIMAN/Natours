@@ -91,6 +91,10 @@ body {
   font-weight: 700;
   text-transform: uppercase; }
 
+.list-teritiary {
+  display: inline-block;
+  list-style-type: none; }
+
 .paragraph {
   font-size: 1.6rem; }
   .paragraph:not(:last-child) {
@@ -184,14 +188,20 @@ body {
     transition: all 0.2s ease-out;
     outline-offset: 2rem; }
     .composition__photo--p1 {
-      left: 0;
+      right: 0;
       top: 2rem; }
     .composition__photo--p2 {
-      right: 0;
-      top: 6rem; }
-    .composition__photo--p3 {
-      right: 20%;
+      left: 0;
       top: 4rem; }
+    .composition__photo--p3 {
+      left: 25%;
+      top: 12rem; }
+    .composition__photo--p4 {
+      right: 2rem;
+      top: 18rem; }
+    .composition__photo--p5 {
+      left: -2rem;
+      top: 20rem; }
     .composition__photo:hover {
       outline: 1.5rem solid #55c57a;
       transform: scale(1.05) translateY(-0.5rem);

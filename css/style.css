@@ -194,8 +194,9 @@ body {
       left: 0;
       top: 4rem; }
     .composition__photo--p3 {
-      left: 25%;
-      top: 12rem; }
+      width: 60%;
+      left: 20%;
+      top: 10rem; }
     .composition__photo--p4 {
       right: 2rem;
       top: 18rem; }

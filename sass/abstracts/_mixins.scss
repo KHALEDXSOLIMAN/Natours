@@ -5,3 +5,31 @@
     clear: both;
   }
 }
+@mixin gradient-font-light {
+  background-image: linear-gradient(
+    to right,
+    $color-primary-new-light,
+    $color-primary-new-dark
+  );
+  display: inline-block;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+@mixin gradient-font-dark {
+  background-image: linear-gradient(
+    to right,
+    $color-primary-old-light,
+    $color-primary-old-dark
+  );
+  display: inline-block;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+@mixin photo-composition {
+  outline: 1.5rem solid $color-primary;
+
+  transform: scale(1.05) translateY(-0.5rem);
+  box-shadow: 0 2.5rem 4rem rgba($color-black, 0.5);
+  z-index: 1;
+}

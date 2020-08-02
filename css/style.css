@@ -185,21 +185,21 @@ body {
   position: relative;
   perspective: 150rem;
   -moz-perspective: 150rem;
-  height: 50rem; }
+  height: 52rem; }
   .card__side {
     position: absolute;
     top: 0;
     left: 0;
-    height: 50rem;
+    height: 52rem;
     width: 100%;
     backface-visibility: hidden;
+    overflow: hidden;
     border-radius: 0.3rem;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
     transition: all 0.8s ease; }
     .card__side--front {
       background-color: #fff; }
     .card__side--back {
-      background-color: cornflowerblue;
       transform: rotateY(180deg); }
       .card__side--back-1 {
         background-image: linear-gradient(to right bottom, #fdc830, #f37335); }
@@ -211,6 +211,49 @@ body {
     transform: rotateY(-180deg); }
   .card:hover .card__side--back {
     transform: rotateY(0deg); }
+  .card__picture {
+    background-size: cover;
+    height: 23rem;
+    background-blend-mode: screen;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
+    .card__picture--1 {
+      background-image: linear-gradient(to right bottom, #fdc830, #f37335), url(../img/nat-5.jpg); }
+    .card__picture--2 {
+      background-image: linear-gradient(to right bottom, #5dfe60cc, #28d1accc), url(../img/nat-5.jpg); }
+    .card__picture--3 {
+      background-image: linear-gradient(to right bottom, #00c6ff, #0072ff), url(../img/nat-5.jpg); }
+  .card__heading {
+    width: 75%;
+    position: absolute;
+    top: 12rem;
+    right: 2rem;
+    font-size: 2.8rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: right;
+    color: #fff; }
+  .card__heading-span {
+    padding: 1rem 1.5rem;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone; }
+    .card__heading-span--1 {
+      background-image: linear-gradient(to right bottom, #fdc830, #f37335); }
+    .card__heading-span--2 {
+      background-image: linear-gradient(to right bottom, #5dfe60, #28d1ac); }
+    .card__heading-span--3 {
+      background-image: linear-gradient(to right bottom, #00c6ff, #0072ff); }
+  .card__details ul {
+    list-style: none;
+    width: 80%;
+    padding: 3rem;
+    margin: 0 auto; }
+    .card__details ul li {
+      text-align: center;
+      font-size: 1.5rem;
+      padding: 1rem; }
+      .card__details ul li:not(:last-child) {
+        border-bottom: 1px solid #eee; }
 
 .composition {
   position: relative; }
@@ -297,6 +340,7 @@ body {
   background-image: linear-gradient(to right bottom, rgba(93, 254, 96, 0.8) 0%, rgba(40, 209, 172, 0.8) 90%), url(../img/hero.jpg);
   background-size: cover;
   background-position: top;
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 75vh, 0% 100%);
   clip-path: polygon(0% 0%, 100% 0%, 100% 75vh, 0% 100%); }
   .header__logo-box {
     position: absolute;

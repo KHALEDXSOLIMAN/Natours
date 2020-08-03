@@ -55,6 +55,8 @@
     background-blend-mode: screen;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    border-top-left-radius: 0.3rem;
+    border-top-right-radius: 0.3rem;
     &--1 {
       background-image: linear-gradient(
           to right bottom,
@@ -69,7 +71,7 @@
           $color-primary-new-light,
           $color-primary-new-dark
         ),
-        url(../img/nat-5.jpg);
+        url(../img/nat-6.jpg);
     }
     &--3 {
       background-image: linear-gradient(
@@ -77,7 +79,7 @@
           $color-tertiary-light,
           $color-tertiary-dark
         ),
-        url(../img/nat-5.jpg);
+        url(../img/nat-7.jpg);
     }
   }
   &__heading {
@@ -132,5 +134,25 @@
         }
       }
     }
+  }
+  &__cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  &__price-box {
+    color: $color-white;
+    margin-bottom: 8rem;
+  }
+  &__price-only {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+  }
+  &__price-value {
+    font-size: 6rem;
+    font-weight: 100;
   }
 }
